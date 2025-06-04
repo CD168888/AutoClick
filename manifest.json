@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Click Extension",
+  "description": "自动点击助手 - 党政学习平台自动检测和点击按钮",
+  "version": "1.0",
+  "author": "蒋小渡",
+  "action": {},
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://study.enaea.edu.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://study.enaea.edu.cn/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
